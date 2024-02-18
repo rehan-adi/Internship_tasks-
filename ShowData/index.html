@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" height: 60vh; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+
+   <div style="display: flex; justify-content: center; align-items: center;">
+    <h1>Showing user Data</h1>
+   </div>
+    <table style="border-collapse: collapse; width: 100%; border: 1px solid black;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black;">Name</th>
+                <th style="border: 1px solid black;">UserName</th>
+                <th style="border: 1px solid black;">E-mail</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+    <script>
+       async function ShowData (){
+           try{
+            let res = await fetch('https://jsonplaceholder.typicode.com/users')
+            let data = await res.json();
+            let tableBody = document.getElementById('tableBody');
+            data.forEach(user => {
+                   const row = document.createElement('tr');
+                   row.innerHTML = `<td style="border: 1px solid black;">${user.id}</td><td style="border: 1px solid black;">${user.name}</td><td style="border: 1px solid black;">${user.email}</td>`;
+                   tableBody.appendChild(row);
+               });
+            console.log(data);
+           }catch(error){
+             console.error('Error!');
+           }
+         }
+         ShowData();
+    </script>
+</body>
+</html>
