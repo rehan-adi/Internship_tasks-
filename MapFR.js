@@ -1,8 +1,11 @@
 const Founders = [
-    {name: 'Steve Jobs', Legend: true, industry: 'tech' },
-    {name: 'Elon Musk', Legend: true, industry: 'tech'},
-    {name: 'Warren Buffet', Legend: true, industry: 'finance'},
-    {name: 'Virat Kholi', Legend: true, industry: 'Cricket'},
+    {name: 'Steve Jobs', Legend: true, industry: 'tech', company: ["Apple Inc", "Pixel Studio"] },
+    {name: 'Elon Musk', Legend: true, industry: 'tech', companu: ["Space X", "Tesla", "SolaeCity" ]},
+    {name: 'Andrew Tate', Legend: true, industry: 'Markething', company: ["Top G"]},
+    {name: 'Virat Kholi', Legend: true, industry: 'Cricket', company: ["Audi", "Vcap"]},
+    // Just for fun purpose 
+    // Founders jnon 
+
 ];
 
 Founders.forEach((data) => {
