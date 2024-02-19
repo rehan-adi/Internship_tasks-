@@ -45,3 +45,19 @@ async function allows us to use the await keyword within it.
 The await keyword is used inside an async function to pause the execution of the function until the Promise is resolved, and it returns the resolved value.
 
 For example prefer 4th Question example .
+
+
+6. What is object in Js ?
+
+-> An object in JavaScript is an unordered collection of key-value pairs, where each key is a string and each value can be any data type, including other objects. 
+
+Example :  
+
+const Entrepreneur = {
+    name: 'Rehan',
+    age: 17,
+    position: 'CEO',
+}
+
+console.log(Entrepreneur.name)  output = Rehan
+console.log(Entrepreneur.position)  output = CEO
