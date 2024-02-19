@@ -1,6 +1,6 @@
 1. What is HigherOrder function ?
 
- -> Those functions who accept another function in argument or return a function in called HigherOrder function.
+ -> Those functions who accept another function in argument or return a function is called HigherOrder function.
 
  2. what is  Callback in Js?
 
@@ -21,4 +21,27 @@
   const result = parrentFunc();
   result();
 
-  
+4. How to call api in js ?
+-> to fetch data from any api we can use fetch method that is a asyns nature lets see how we do that .
+
+example : 
+
+  async function apiData(){
+        const api = await fetch('https//:facebook.com');
+        const data = await api.json();
+        console.log(data);
+   }
+
+
+ Here we create a async function inside it we have api variable, this variable store api data.
+We will discus async/await in next part. Inside the apt we have a 'await' and fetch method and the api.
+In the next line we convert the api in json format. And in last we prit it on console.
+
+5. Async and await in Js ?
+
+-> async is the keyword in javascript it's used to define a function that returns a promise.
+async function allows us to use the await keyword within it.
+
+The await keyword is used inside an async function to pause the execution of the function until the Promise is resolved, and it returns the resolved value.
+
+For example prefer 4th Question example .
