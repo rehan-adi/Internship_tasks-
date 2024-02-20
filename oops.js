@@ -1,18 +1,16 @@
-let car = {
-    brand: 'Bmw',
-    price: '1 cr',
-    model: 'm3',
+// This is a class  and a constructor function
+
+class Car {
+    constructor(brand, price, model){
+          this.brand = brand;
+          this.price = price
+          this.model = model
+    }
 }
 
-console.log(car.brand);
 
 
-function AllCar(brand, price, model){
-    this.brand =  brand;
-    this.price =  price;
-    this.model =  model;
-}
-
-const CollectionsOfCar = new AllCar('Audi', '80l', 'R8')
-
-console.log(CollectionsOfCar);
+const Tesla = new Car('Tesla X', '3.2 cr', '10')
+console.log(Tesla.brand);
+const Audi = new Car('Auid R8', '2 Cr', 'R8');
+console.log(Audi);
