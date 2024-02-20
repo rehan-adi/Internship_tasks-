@@ -61,3 +61,11 @@ const Entrepreneur = {
 
 console.log(Entrepreneur.name)  output = Rehan
 console.log(Entrepreneur.position)  output = CEO
+
+7. OOPS in js ?
+
+-> There are 4 Pillars in OOP.
+1. Encapsulation: This is like putting variables and functions in a Class
+2. Abstraction : Abstraction showing only necessary things and hiding the complicated details.   
+3. Inheritance : This is like passing features (colors and other things) from one class (parent) to another class (child).
+4. Polymorphism: Polymorphism means that different objects can use the same method, and you don't need to know exactly how each object does its thing. It allows you to interact with different things in a similar way.
