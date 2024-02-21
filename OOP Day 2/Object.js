@@ -24,6 +24,10 @@ const WebMatrixCoders = [{
 const {bestCoders: Coders} = WebMatrixCoders[0]
 console.log(Coders);
 
+delete WebMatrixCoders[0].isHiring;
+
+console.log(WebMatrixCoders[0].isHiring);
+
 
 WebMatrixCoders[1].tool.forEach((data) => {
     console.log(data);

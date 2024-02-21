@@ -69,3 +69,12 @@ console.log(Entrepreneur.position)  output = CEO
 2. Abstraction : Abstraction showing only necessary things and hiding the complicated details.   
 3. Inheritance : This is like passing features (colors and other things) from one class (parent) to another class (child).
 4. Polymorphism: Polymorphism means that different objects can use the same method, and you don't need to know exactly how each object does its thing. It allows you to interact with different things in a similar way.
+
+
+8. What is 'this' in javaScript ?
+
+=> In javaScript 'this' is an keyword not an veriable, that means we can not change the value of this.
+  
+  Inside of an object 'this' refers to that particular object.
+  Inside function 'this' refers to global oject.
+  And alone 'this' refers to global oject.
