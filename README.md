@@ -2,9 +2,9 @@
 
 ## -> Those functions who accept another function in argument or return a function is called HigherOrder function.
 
- <!-- 2. what is  Callback in Js?
+ 2. what is  Callback in Js?
 
-# ->  A callback function is a function passed as an argument to another function, which is then invoked or executed at a later point in the program, usually after the completion of an asynchronous operation. -->
+# ->  A callback function is a function passed as an argument to another function, which is then invoked or executed at a later point in the program, usually after the completion of an asynchronous operation.
 
  3. Closure in Js ?
 

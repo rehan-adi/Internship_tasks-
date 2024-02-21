@@ -8,6 +8,11 @@ class Car {
     }
 }
 
+const demo = [{ name: 'fizan', age: 100,}, {name: 'rehan', age: 17}, {name: 'abc', age: 200}]
+
+demo[2].name = 'tom';
+console.log(demo[2].name);
+
 
 
 const Tesla = new Car('Tesla X', '3.2 cr', '10')
