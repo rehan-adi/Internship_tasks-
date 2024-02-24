@@ -6,6 +6,12 @@ import Express from "express";
 const expressPower = Express();
 const port = 3333;
 
+// Middlwere 
+expressPower.use((req, res, next) => {
+    //  Other logic 
+    next()
+  })
+
 expressPower.get('/', (req, res) => {
      res.send('Hellowww from express server')
 }).get('/about', (req, res) => {
