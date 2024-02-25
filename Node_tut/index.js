@@ -13,7 +13,7 @@ expressPower.use((req, res, next) => {
   })
 
 expressPower.get('/', (req, res) => {
-     res.send('Hellowww from express server')
+     res.send('Hellowwww from express server')
 }).get('/about', (req, res) => {
      res.send('This is about page')
 })
