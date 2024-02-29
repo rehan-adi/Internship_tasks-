@@ -1,0 +1,376 @@
+        
+        /*------Basics------------------ */
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ffcb74;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #2f2f2f;
+        }
+        div.content{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px ;
+        }
+
+        /*------Home Page Creation----------------- */
+        div.homepage{
+            width: 400px ;
+            height: 650px ;
+            margin-bottom: 50px ;
+            border-radius: 0.5rem ;
+            background-color: #f6f6f6;
+        }
+        nav{
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        h3{
+            color: #2f2f2f;
+            text-align: start;
+            text-transform: uppercase;
+        }
+        div.menu{
+            width: 50px ;
+            height: 5px ;
+            border: none;
+            margin-bottom: 5px ;
+            border-radius: 2rem ;
+            background-color: #2f2f2f;
+        }
+        div.photo{
+            width: 350px ;
+            height: 200px ;
+            margin: 25px ;
+            border-radius: 8px ;
+            background-color: #FF9677;
+        }
+.photo img {
+  width: 350px; 
+  height: 200px ;
+    object-fit: cover;
+  border-radius: 8px ;
+}
+        h1{
+            color: #2f2f2f;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            width: 120px ;
+            height: 60px ;
+            margin: 10px ;
+            border: none;
+            border-radius: 32px ;
+            align-items: center;
+            text-align: center;
+            color: #2f2f2f;
+            background-color: #2f2f2f;
+            color: #f6f6f6;
+        }
+        div.mainbutton{
+            display: flex ;
+            justify-content: center;
+        }
+
+
+        /* Product Page */
+
+        div.image{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px ;
+        }
+        div.proimg{
+            width: 150px;
+            height: 180px;
+            background-color: #FF9677;
+            border-radius: 8px ;
+        }
+        div.des{
+            width: 150px ;
+            height: 200px ;
+            display: block;
+        }
+        div.subproduct{
+            display: flex;
+            justify-content:space-between ;
+          margin-top: 2rem;   
+          padding: 5px  ;
+            background-color: #ffffff;
+            border-radius: 4px ;
+            box-shadow: 5px 10px 5px  #a3a3a3;
+            margin-left: 20px ;
+            margin-right: 20px ;
+            margin-bottom: 30px ;
+        }
+        div.colorimg{
+            width: 150px;
+            height: 100px ;
+            background-color: #2f2f2f;
+            border-radius: 8px ;
+        }
+        div.details{
+            display: block;
+            width: 150px ;
+            height: 100px ;
+        }
+        #subbutton{
+            width: 100px;
+            height: 25px ;
+            background-color: #2f2f2f;
+            color: #ffffff;
+            border-radius: 8px ;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+        /* Third Page Creation */
+        h2{
+            
+            margin-top: 10px ;
+            margin-left: 25px ;
+        }
+        div.pay{
+            display: flex;
+            justify-content:space-between ;
+            padding: 5px  ;
+            background-color: #ffffff;
+            box-shadow: 2px 5px 2px #a3a3a3;
+            border-radius: 4px ;
+            margin-left: 20px ;
+            margin-right: 20px ;
+            margin-bottom: 30px ;
+            align-items: center;
+        }
+        div.payproduct{
+            width: 150px;
+            height: 100px ;
+            background-color: #FF9677;
+            border-radius: 8px ;
+        }
+        div.underline{
+            width: 190px;
+            height: 5px ;
+            background-color: #2f2f2f;
+            border-radius: 32px ;
+            margin: 5px ;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        pre{
+            font-weight: 900;
+        }
+
+        /* Contact Details Creation */
+        input{
+            width: 350px ;
+            margin: 25px;
+            margin-bottom: 5px;
+            padding: 20px ;
+            border-radius: 16px ;
+            font-size: 20px ;
+            font-weight: 700;
+        }
+        #login{
+            width: 350px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 10px ;
+            font-size: 24px ;
+            font-weight: 700;
+            background-color: #7670fe;
+        }
+        @media screen and (max-width:400px){
+            div.content{
+                display: block;
+            }
+        }
+
+/*  Responsiveness*/
+  
+        @media screen and (max-width:1200px){     
+            div.content{
+                width: 100%;
+                display: block;
+                margin-top: 10px ;
+        }
+            div.homepage{
+            width: 300px ;
+            height: 650px ;
+            margin-bottom: 20px ;
+            border-radius: 8px ;
+            background-color: #f6f6f6;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav{
+            padding: 10px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        h3{
+            color: #2f2f2f;
+            text-align: start;
+            text-transform: uppercase;
+        }
+        div.menu{
+            width: 50px ;
+            height: 5px ;
+            border: none;
+            margin-bottom: 5px ;
+            border-radius: 32px ;
+            background-color: #2f2f2f;
+        }
+        div.photo{
+            width: 250px ;
+            height: 200px ;
+            margin: 25px ;
+            border-radius: 8px ;
+            background-color: #FF9677;
+        }
+          .photo img {
+            width: 250px;
+            height: 200px; 
+          }
+        h1{
+            color: #2f2f2f;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            width: 100px ;
+            height: 50px ;
+            margin: 5px ;
+            border: none;
+            border-radius: 32px ;
+            align-items: center;
+            text-align: center;
+            color: #2f2f2f;
+            background-color: #2f2f2f;
+            color: #f6f6f6;
+        }
+        div.mainbutton{
+            display: flex ;
+            justify-content: center;
+        }
+
+        /* Second Page */
+            
+        div.image{
+            display: block;
+            margin: 25px ;
+        }
+        div.proimg{
+            width: 250px;
+            height: 160px ;
+            background-color: #FF9677;
+            border-radius: 8px ;
+        }
+        div.des{
+            width: 250px ;
+            height: 100px ;
+            display: block;
+        }
+        div.subproduct{
+            display: flex;
+            justify-content:space-between ;
+            padding: 5px  ;
+            background-color: #ffffff;
+            border-radius: 4px ;
+            box-shadow: 5px 10px 5px  #a3a3a3;
+            margin-left: 20px ;
+            margin-right: 20px ;
+            margin-bottom: 30px ;
+        }
+        div.colorimg{
+            width: 100px;
+            height: 100px ;
+            background-color: #2f2f2f;
+            border-radius: 8px ;
+        }
+        div.details{
+            display: block;
+            width: 100px ;
+            height: 100px ;
+        }
+        #subbutton{
+            width: 90px;
+            height: 25px ;
+            background-color: #2f2f2f;
+            color: #ffffff;
+            border-radius: 8px ;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        /* Third Page */
+        h2{
+            
+            margin-top: 10px ;
+            margin-left: 25px ;
+        }
+        div.pay{
+            display: block;
+            padding: 5px  ;
+            background-color: #ffffff;
+            box-shadow: 2px 5px 2px #a3a3a3;
+            border-radius: 4px ;
+            margin-left: 20px ;
+            margin-right: 20px ;
+            margin-bottom: 30px ;
+            align-items: center;
+        }
+        div.payproduct{
+            width: 250px;
+            height: 100px ;
+            background-color: #FF9677;
+            border-radius: 8px ;
+        }
+        div.underline{
+            width: 250px;
+            height: 5px ;
+            background-color: #2f2f2f;
+            border-radius: 32px ;
+            margin: 5px ;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        pre{
+            font-weight: 900;
+        }
+
+        /* Contact Details  */
+        
+        input{
+            width: 250px ;
+            margin: 20px;
+            margin-bottom: 5px;
+            padding: 15px ;
+            border-radius: 16px ;
+            font-size: 20px ;
+            font-weight: 400;
+        }
+        #login{
+            width: 250px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 10px ;
+            font-size: 24px ;
+            font-weight: 700;
+            background-color: #7670fe;
+        }
+          #login:hover{ 
+            box-shadow: 5px 10px 5px  #a3a3a3  ;
+            
+          }
+        }
