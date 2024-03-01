@@ -14,8 +14,32 @@ Server.get("/buy", (req, res) => {
     res.render("index");
 });
 
-Server.get('/token', (req, res) => {
-    res.json({message: 'JWT Token'});
+Server.get('/user', (req, res) => {
+    const user = {
+        name: "Rehan",
+        age: 17,
+    };
+    try {
+        const token = jwt.sign(user, 'jwtkey', { expiresIn: '1h' });
+        res.send({ token });
+    } catch (error) {
+        console.error("Error generating JWT:", error);
+        res.status(500).send("Internal Server Error");
+    }
+
+})
+
+Server.get('/check', (req, res) => {
+
+   const token = req.headers.authorization;
+
+   jwt.verify(token, 'jwtkey', (err, decoded) => {
+        if(err){
+            res.status(401).send('Invalid Token');
+        }
+        res.json(decoded);
+   })
+
 })
 
 Server.listen(3000, () => {
