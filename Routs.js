@@ -1,9 +1,16 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
+import bodyParser from 'body-parser';
 const Server = express();
 
 Server.set("view engine", "ejs");
 Server.use(express.static("public"));
+
+Server.use(bodyParser.json());
+
+const users = [
+    {name: 'Rehan', age: 18,},
+]
 
 
 Server.get('/', (req, res) => {
@@ -14,34 +21,21 @@ Server.get("/buy", (req, res) => {
     res.render("index");
 });
 
-Server.get('/user', (req, res) => {
-    const user = {
-        name: "Rehan",
-        age: 17,
-    };
-    try {
-        const token = jwt.sign(user, 'jwtkey', { expiresIn: '1h' });
-        res.send({ token });
-    } catch (error) {
-        console.error("Error generating JWT:", error);
-        res.status(500).send("Internal Server Error");
-    }
 
+Server.post('/singUp', (req, res) => {
+    const {name, age} = req.body;
+
+      const exterauser = users.find(user => user.name === name && user.age == age);
+      if(exterauser){
+          return res.status(400).json({ message: 'User already exists' });
+      }
+      const newUser = { name, age};
+      users.push(newUser);
+      return res.status(201).json({message : 'User created successfully'})
 })
 
-Server.get('/check', (req, res) => {
 
-   const token = req.headers.authorization;
 
-   jwt.verify(token, 'jwtkey', (err, decoded) => {
-        if(err){
-            res.status(401).send('Invalid Token');
-        }
-        res.json(decoded);
-   })
-
-})
-
-Server.listen(3000, () => {
-    console.log('Server is running on port 3000');
+Server.listen(5000, () => {
+    console.log('Server is running on port 5000');
 });
