@@ -35,7 +35,7 @@ Server.post('/login', (req, res) => {
     };
     const token = jwt.sign({ user: check }, "andsand", { expiresIn: '5h' });
     res.status(200).json({ message: 'Login successful', token });
-})
+});
 
 
 Server.listen(3000, () => {

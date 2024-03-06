@@ -25,13 +25,23 @@ Server.get("/buy", (req, res) => {
 Server.post('/singUp', (req, res) => {
     const {name, age} = req.body;
 
-      const exterauser = users.find(user => user.name === name && user.age == age);
-      if(exterauser){
+      const exteraUser = users.find(user => user.name === name);
+      if(exteraUser){
           return res.status(400).json({ message: 'User already exists' });
       }
       const newUser = { name, age};
       users.push(newUser);
       return res.status(201).json({message : 'User created successfully'})
+})
+
+Server.post("/login", (req, res) => {
+    const {name, age} = req.body;
+     const find = users.find(user => user.name === name && user.age === age);
+     if(!find){
+        return res.status(400).json({message: 'Invalid Credisials'});
+     }
+     const token = jwt.sign({users: find}, 'jwtsecret', {expiresIn: '1h'})
+     res.status(200).json({message: 'Login Successfully', token});
 })
 
 
